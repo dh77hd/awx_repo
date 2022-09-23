@@ -1,6 +1,5 @@
 ---
 - name: Install nginx
   hosts: 192.168.0.70
-
- roles:
-   - geerlingguy.nginx
+  roles:
+    - geerlingguy.nginx
