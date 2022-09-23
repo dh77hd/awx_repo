@@ -1,0 +1,10 @@
+---
+- hosts: all
+  user: centos
+  tasks:
+  - name: Check OS Version
+    become: true
+    register: result
+    shell: cat /etc/redhat-release
+  - debug:
+      msg: "{{ result.stdout }}"
